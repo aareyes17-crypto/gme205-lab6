@@ -16,7 +16,7 @@ class Parcel(SpatialObject):
     def detect_overlap(self, other_parcels):
         overlaps = []
         for parcel in other_parcels:
-            if parcel != self and self.intersects(parcel, threshold=5.0):
+            if parcel is not self and self.intersects(parcel, threshold=5.0):
                 overlaps.append(parcel.parcel_id)
         return overlaps
 

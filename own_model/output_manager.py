@@ -10,11 +10,13 @@ class OutputManager:
     def export_geojson(self, parcels):
         print("\n=== EXPORTING GEOJSON ===")
         geojson_data = []
+
         for p in parcels:
             geojson_data.append({
                 "id": p.parcel_id,
                 "geometry": p.geometry
             })
+
         print("Export complete.")
         return geojson_data
 

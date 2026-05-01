@@ -27,8 +27,6 @@ This laboratory applies Object-Oriented Analysis and Design (OOAD) by translatin
 3. Did I avoid putting unrelated data into this object?
 - Yes, I avoided putting unrelated data to any class, and each class only contains attributes relevant to its purpose. The Parcel class did not include income or height, because those belonged to Household and Building. It also did not include length or road_type, beause it belonged to the Road class. For the Household class, it did not contain spatial attributes like area, geometry, or road-related attributes, since it is not a spatial object. By ensuring that only relevant attributes are included per class, this keeps each class focused and avoids mixing unrelated types of data within a single object.
 ---
-
----
 ### Author
 - Audrey Marie Justine A. Reyes
 - MS Geomatics Engineering (GeoInf)
